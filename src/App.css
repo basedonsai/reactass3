@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title{
+  text-align: center;
+}
+.product {
+  flex: 0 1 calc(30% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+}
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 60%;
+  height: auto;
+}
+.product h2 {
+  color: #333;
+  font-size: 2.5ch;
+}
+
+.product p {
+  color: #777; 
+  font-weight: 500;
+  font-size: medium;
+}
